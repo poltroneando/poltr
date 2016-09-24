@@ -1,0 +1,30 @@
+.img-login{
+	margin-bottom: 25px;
+}
+.navbar {
+	background-color: #083C52;
+	color : white;
+}
+.navbar-font,.navbar-font a{
+	color: orange;
+}
+.form-login-hide{
+	display: none;
+}
+#btn-login, #btn-cadast {
+	background-color: #083C52;
+	color : white;
+}
+#btn-login.active, #btn-cadast.active{
+	background-color: white;
+	color : #083C52;
+}
+.form{
+	margin-top: 30px;
+}
+.navbar-font .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-font .navbar-toggle .icon-bar {
+    background-color: #888;
+}
