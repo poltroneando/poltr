@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://poltroneando-co.umbler.net/'),
+    'url' => env('APP_URL', 'http://poltroneando-co.umbler.net'),
 
     /*
     |--------------------------------------------------------------------------
