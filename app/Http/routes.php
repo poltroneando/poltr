@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::auth();
-
+Route::group(['prefix'=>'perfil'],function(){
+	Route::get('editar', function(){
+		return view('profile/edit');
+	});
+});
 Route::get('/cadastrar', function() {
 	return view('auth/login',['tipo'=>'1']);
 });

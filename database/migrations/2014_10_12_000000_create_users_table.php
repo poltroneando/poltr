@@ -27,20 +27,17 @@ class CreateUsersTable extends Migration
         Schema::create('genero', function(Blueprint $table) {
             $table->increments('id_genero');
             $table->string('descricao',255);     
-            $table->primary('id_genero');       
         });
 
         Schema::create('pais', function(Blueprint $table) {
             $table->increments('id_pais');            
             $table->string('nome_pais',100);
             $table->string('sigla',3);
-            $table->primary('id_pais');
         });
 
         Schema::create('classificacao_indicativa', function(Blueprint $table) {
             $table->increments('id_classificacao_indicativa');
             $table->string('faixa',2);
-            $table->primary('id_classificacao_indicativa');
         });
 
         Schema::create('titulo', function(Blueprint $table) {
@@ -51,8 +48,7 @@ class CreateUsersTable extends Migration
             $table->integer('duracao')->nullable();
             $table->text('sinopse')->nullable();
             $table->integer('id_pais')->nullable();
-            $table->integer('id_classificacao_indicativa')-nullable();
-            $table->primary('id_titulo');
+            $table->integer('id_classificacao_indicativa')->nullable();
             $table->foreign('id_pais')->references('id_pais')->on('pais');
             $table->foreign('id_classificacao_indicativa')->references('id_classificacao_indicativa')->on('classificacao_indicativa');
         });
@@ -69,6 +65,6 @@ class CreateUsersTable extends Migration
         Schema::drop('genero');
         Schema::drop('pais');
         Schema::drop('classificacao_indicativa');
-        Schema::drop('titulo')
+        Schema::drop('titulo');
     }
 }
