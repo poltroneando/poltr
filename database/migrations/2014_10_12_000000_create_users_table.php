@@ -19,7 +19,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->date('data_nasc')->nullable();
             $table->string('bio')->nullable();
-            $table->string('genero')->nullable();            
+            $table->string('genero')->nullable();  
+            $table->string('avatar')->default('defaut.jpg');          
             $table->rememberToken();
             $table->timestamps();
         });
