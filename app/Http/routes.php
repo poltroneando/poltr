@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::auth();
 Route::group(['prefix' => '/perfil'],function(){
 	Route::get('/', 'PerfilController@profile');
+	Route::post('/', 'PerfilController@update_avatar');
 });
 Route::get('/cadastrar', function() {
 	return view('auth/login',['tipo'=>'1']);
