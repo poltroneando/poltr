@@ -146,7 +146,6 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
         /*
@@ -157,6 +156,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Intervention\Image\ImageServiceProvider::class,
     ],
 
     /*
