@@ -146,7 +146,7 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::Class,
+        Intervention\Image\ImageServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
         /*
