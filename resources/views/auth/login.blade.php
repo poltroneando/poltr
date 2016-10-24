@@ -15,16 +15,18 @@
             </div>
         </div>
     </div>
+    </br>
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-4 col-md-offset-4">
             <form class="form-horizontal @if ($tipo) form-login-hide @endif" id="form-login" role="form" method="POST" action="{{ url('/login') }}">
                 {{ csrf_field() }}
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <label for="email" class="control-label sr-only">E-Mail</label>
-
-                    <input id="email" type="email" class="form-control" name="email" placeholder="E-Mail" value="{{ old('email') }}">
-
+                    <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-align-left" id="addon1"></span> 
+                        <input id="email" type="email" class="form-control" name="email" placeholder="E-Mail" value="{{ old('email') }}">
+                    </div>
                     @if ($errors->has('email'))
                         <span class="help-block">
                             <strong>{{ $errors->first('email') }}</strong>
@@ -33,7 +35,7 @@
                 </div>
 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                    <label for="password" class="col-md-4 control-label sr-only">Senha</label>
+                    <label for="password" class="control-label sr-only">Senha</label>
                     <input id="password" type="password" class="form-control" placeholder="Senha" name="password">
 
                     @if ($errors->has('password'))
