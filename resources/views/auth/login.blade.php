@@ -7,7 +7,7 @@
             <img src="/imgs/marca.png" class="img-login" alt="Poltroneando" style="max-width: 300px;">
         </div>
     </div>
-    <div class="row">
+    <div class="row text-center">
         <div class="col-md-4 col-md-offset-4">
             <div class="btn-group" role="group" aria-label="..." data-toggle="buttons">
                 <button type="button" id="btn-login" style="width: 100px;" class="btn btn-primary @if ($tipo==0) active @endif">Login</button>
@@ -16,9 +16,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-md-offset-3">
             <form class="form-horizontal @if ($tipo) form-login-hide @endif" id="form-login" role="form" method="POST" action="{{ url('/login') }}">
-                {{ csrf_field() }}
+                { csrf_field() }
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <label for="email" class="control-label sr-only">E-Mail</label>
