@@ -24,7 +24,7 @@
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <label for="email" class="control-label sr-only">E-Mail</label>
                     <div class="input-group">
-                        <span class="input-group-addon glyphicon glyphicon-align-left" id="addon1"></span> 
+                        <span class="input-group-addon" id="addon1"><span class="glyphicon glyphicon-envelope"></span></span> 
                         <input id="email" type="email" class="form-control" name="email" placeholder="E-Mail" value="{{ old('email') }}" aria-describedby="addon1">
                     </div>
                     @if ($errors->has('email'))
