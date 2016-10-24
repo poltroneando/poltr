@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <form class="form-horizontal @if ($tipo) form-login-hide @endif" id="form-login" role="form" method="POST" action="{{ url('/login') }}">
-                { csrf_field() }
+                {{ csrf_field() }}
 
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                     <label for="email" class="control-label sr-only">E-Mail</label>
