@@ -28,3 +28,6 @@
 .navbar-font .navbar-toggle .icon-bar {
     background-color: #888;
 }
+.input-group-addon .glyphicon{
+	background: #006D93;
+}
