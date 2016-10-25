@@ -36,8 +36,10 @@
 
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                     <label for="password" class="control-label sr-only">Senha</label>
-                    <input id="password" type="password" class="form-control" placeholder="Senha" name="password">
-
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addon2"><span class="glyphicon glyphicon-lock"></span></span> 
+                        <input id="password" type="password" class="form-control" placeholder="Senha" name="password" aria-describedby="addon2">
+                    </div>
                     @if ($errors->has('password'))
                         <span class="help-block">
                             <strong>{{ $errors->first('password') }}</strong>
