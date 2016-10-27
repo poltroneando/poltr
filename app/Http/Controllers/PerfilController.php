@@ -11,6 +11,11 @@ use App\Http\Requests;
 class PerfilController extends Controller
 {
     //
+	public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function profile(){
         return view('profile/index', array('user' => Auth::user()));
     }
