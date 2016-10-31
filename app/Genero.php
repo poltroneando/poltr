@@ -11,4 +11,8 @@ class Genero extends Model
     public $timestamps = false;
     //
     protected $fillable = ['descricao'];
+    public function filmes()
+    {
+        return $this->belongsToMany('App\Filme','genero_titulo','id_genero','id_titulo');
+    }
 }
