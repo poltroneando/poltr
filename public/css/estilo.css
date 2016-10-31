@@ -6,7 +6,7 @@
 	color : white;
 }
 .navbar-brand {
-	background: url('/imgs/marca.png');
+	background-image: url('/imgs/marca.png');
 }
 .navbar-font,.navbar-font a{
 	color: orange;
