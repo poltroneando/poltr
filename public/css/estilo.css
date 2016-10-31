@@ -5,6 +5,9 @@
 	background-color: #083C52;
 	color : white;
 }
+.navbar-brand {
+	background: url('/imgs/marca.png');
+}
 .navbar-font,.navbar-font a{
 	color: orange;
 }

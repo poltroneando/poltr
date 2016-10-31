@@ -12,7 +12,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+       /* Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
@@ -53,7 +53,7 @@ class CreateUsersTable extends Migration
             $table->integer('id_classificacao_indicativa')->nullable();
             $table->foreign('id_pais')->references('id_pais')->on('pais');
             $table->foreign('id_classificacao_indicativa')->references('id_classificacao_indicativa')->on('classificacao_indicativa');
-        });
+        });*/
     }
 
     /**

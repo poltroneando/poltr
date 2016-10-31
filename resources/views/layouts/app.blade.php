@@ -42,7 +42,6 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Poltroneando
                 </a>
             </div>
 

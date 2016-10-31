@@ -10,4 +10,5 @@ class Filme extends Model
     protected $primaryKey = 'id_titulo';
     public $timestamps = false;
     //
+    private $fillable = ['nome_titulo', 'data_lancamento', 'nome_original', 'duracao', 'sinopse'];
 }
