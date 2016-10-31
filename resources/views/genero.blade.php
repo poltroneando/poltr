@@ -8,7 +8,7 @@
         </div>        
     </div>    
     <div class="row">
-        @foreach($generos as @genero)   
+        @foreach($generos as $genero)   
         <div class="col-xs-6 col-md-3">
             <a href="">{{ $genero->descricao }}</a>
         </div>
