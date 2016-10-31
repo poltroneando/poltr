@@ -10,6 +10,7 @@ class GeneroController extends Controller
 {
     //
     public function show(){
-        Genero::all();
+        $generos = Genero::all();
+        return view('genero',compact('generos'));
     }
 }

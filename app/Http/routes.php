@@ -31,4 +31,6 @@ Route::get('/login', function() {
 	return view('auth/login',['tipo'=>'0']);
 });
 
+Route::get('/genero', 'GeneroController@show');
+
 Route::get('/home', 'HomeController@index');

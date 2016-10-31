@@ -10,4 +10,5 @@ class Genero extends Model
     protected $primaryKey = 'id_genero';
     public $timestamps = false;
     //
+    protected $fillable = ['descricao'];
 }
