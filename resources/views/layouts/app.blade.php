@@ -42,6 +42,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="/imgs/marca.png" width="108" alt="Poltroneando">
                 </a>
             </div>
 
