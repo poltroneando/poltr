@@ -39,3 +39,9 @@
     background-position: center;
     background-attachment: local;
 }
+.profile-header {
+    padding: 45px 0 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
