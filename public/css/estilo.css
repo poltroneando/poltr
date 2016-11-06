@@ -31,3 +31,11 @@
 .input-group-addon .glyphicon{
 	color: #006D93;
 }
+.profile-background {
+    background-color: #23466b;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+}
