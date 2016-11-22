@@ -5,9 +5,8 @@
     <div class="col-sm-8 col-sm-offset-2 text-left">
       {{var_dump($filmes)}}
       <hr>
-      {{
-        $filme = $filmes[0];
-        var_dump($filme)}}
+      {{ $filme = $filmes[0]}}
+      {{ var_dump($filme)}}
       <hr>    
       {{var_dump($filmes[3])}}
       <!--@foreach($filmes as $filme)
