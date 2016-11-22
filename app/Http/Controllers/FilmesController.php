@@ -24,7 +24,7 @@ class FilmesController extends Controller
         $apirequest = curl_exec($curl_handle);
         curl_close($curl_handle);
         $filmes = json_decode($apirequest);
-        return var_dump($apirequest);//view('titulos/index',array('filmes' => $filmes));
+        return view('titulos/index',array('filmes' => $apirequest));
         //return var_dump($apirequest);
     }
 }
