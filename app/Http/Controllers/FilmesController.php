@@ -19,7 +19,7 @@ class FilmesController extends Controller
         curl_setopt($curl_handle, CURLOPT_ENCODING,'');
         curl_setopt($curl_handle, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($curl_handle, CURLOPT_USERAGENT, 'Poltroneando');
+        //curl_setopt($curl_handle, CURLOPT_USERAGENT, 'Poltroneando');
         $apirequest = curl_exec($curl_handle);
         curl_close($curl_handle);
         //$filmes = json_decode($apirequest->getBody()->getContents());
