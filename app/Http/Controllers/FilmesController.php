@@ -15,6 +15,9 @@ class FilmesController extends Controller
         $curl_handle=curl_init('http://www.omdbapi.com/?r=json&s=toy story&type=movie');
         curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
         curl_setopt($curl_handle, CURLOPT_FRESH_CONNECT, 1);
+        curl_setopt($curl_handle, CURLOPT_HEADER, false);
+        curl_setopt($curl_handle, CURLOPT_ENCODING,'');
+        curl_setopt($curl_handle, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl_handle, CURLOPT_USERAGENT, 'Poltroneando');
         $apirequest = curl_exec($curl_handle);
