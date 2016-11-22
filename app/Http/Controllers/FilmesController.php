@@ -10,7 +10,7 @@ class FilmesController extends Controller
 {
     public function show(){
         $client = new Client();
-        $apirequest = $client->get('http://www.omdbapi.com/',[
+        $apirequest = $client->request('GET','http://www.omdbapi.com/',[
             'params' => ['r' => 'json',
                         's' => 'toy story',
                         'type' =>'movie']
