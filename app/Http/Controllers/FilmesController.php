@@ -21,10 +21,10 @@ class FilmesController extends Controller
         curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
         
         curl_setopt($curl_handle, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1) Gecko/20061010 Firefox/2.0');
-        $apirequest = curl_exec($curl_handle);
+        $filmes = curl_exec($curl_handle);
         curl_close($curl_handle);
-        $filmes = json_decode($apirequest,true);
-        return var_dump($apirequest->getBody()->getContents()); //view('titulos/index',compact('filmes'));
+        //$filmes = json_decode($apirequest,true);
+        return view('titulos/index',compact('filmes'));
         //return var_dump($apirequest);
     }
 }
