@@ -7,10 +7,9 @@
       <hr>
       {{ var_dump($filmes->search)}}
       <hr>    
-      {{var_dump($filmes[3])}}
-      <!--@foreach($filmes as $filme)
-      {{var_dump($filme) }}   
-      <h4>{{ $filme->title }}1</h4>
+      @foreach($filmes as $filme)
+      {{var_dump( key($filmes)) }}   
+      <h4>1</h4>
       <p>Lorem ipsum .</p>
       <hr>
       @endforeach-->
