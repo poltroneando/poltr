@@ -12,7 +12,7 @@ class FilmesController extends Controller
         //$client = new Client();
         //$apirequest = $client->request('GET','http://www.omdbapi.com/?r=json&s=toy story&type=movie');
         //$apirequest = json_decode(file_get_contents('http://www.omdbapi.com/?r=json&s=toy story&type=movie'));
-        $curl_handle=curl_init('http://www.omdbapi.com/?r=json&s=toy story&type=movie');
+        $curl_handle=curl_init('http://www.omdbapi.com/?r=json&s=rocky&type=movie');
         curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
         curl_setopt($curl_handle, CURLOPT_FRESH_CONNECT, 1);
         curl_setopt($curl_handle, CURLOPT_HEADER, false);
