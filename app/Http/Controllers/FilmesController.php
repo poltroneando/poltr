@@ -14,6 +14,7 @@ class FilmesController extends Controller
             'query' => ['r' => 'json']
         ]);
         $filmes = json_decode($apirequest->getBody()->getContents());
-        return view('titulos/index',compact('filmes'));
+        //return view('titulos/index',compact('filmes'));
+        return var_dump($apirequest);
     }
 }
