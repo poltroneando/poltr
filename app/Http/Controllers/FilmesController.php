@@ -11,7 +11,7 @@ class FilmesController extends Controller
     public function show(){
         $client = new Client();
         $apirequest = $client->request('GET','http://www.omdbapi.com/',[
-            'query' => ['r' => 'json',
+            'params' => ['r' => 'json',
                         't' => 'toy story']
         ]);
         $filmes = json_decode($apirequest->getBody()->getContents());
