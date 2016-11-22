@@ -10,7 +10,10 @@ class FilmesController extends Controller
 {
     public function show(){
         $client = new Client();
-        $filmes = $client->get('http://www.omdbapi.com/');
+        $apirequest = $client->request('GET','http://www.omdbapi.com/',[
+            'query' => ['r' => 'json']
+        ]);
+        $filmes = json_decode($apirequest->getBody()->getContents());
         return view('titulos/index',compact('filmes'));
     }
 }
